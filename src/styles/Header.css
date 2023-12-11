@@ -1,0 +1,85 @@
+.header {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  background: #000000;
+  min-height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-title {
+  margin: 0px;
+  font-size: 16px;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Comic Sans MS";
+}
+.header-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-button {
+  margin-left: 10px !important;
+  text-transform: uppercase !important;
+  background: #333333 !important;
+  color: white !important;
+  font-size: 12px !important;
+  cursor: pointer !important;
+}
+.header-button:hover{
+  color: white;
+  background: #000000;
+}
+.header-button.active {
+  background: #49ba8e !important;
+  cursor: default;
+}
+
+/* Tablets */
+
+@media screen and (max-width: 800px) {
+  .header {
+    min-height: 100px;
+  }
+  .header-item {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .dropdown-list {
+    justify-content: space-around;
+    width: 95%;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 450px) {
+  .header-button {
+    font-size: 10px !important;
+    margin: 0px !important;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1100px) {
+  .header-title {
+      font-size: 20px;
+  }
+
+  .header-button {
+      font-size: 14px !important;
+      margin: 0px 10px !important;
+  }
+}
+

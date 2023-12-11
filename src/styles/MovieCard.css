@@ -1,0 +1,103 @@
+.movie {
+    margin: 10px;
+}
+
+.movie .movie-name {
+    font-size: 12px;
+    margin: 5px 0px;
+    width: 180px;
+    opacity: 0.8;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.movie-image {
+    position: relative;
+    height: 240px;
+    width: 180px;
+    border: 1px solid #49ba8e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.movie-image image {
+    height: 240px;
+    width: 180px;
+}
+
+.movie-image > .start-btn {
+    width: 60px;
+    position: absolute;
+}
+
+.movie-image:hover > .start-btn {
+    width: 85px;
+}
+
+.movie-image > .movie-date {
+    z-index: 20;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    color: white;
+    border-radius: 100%;
+    background: #49ba8e;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.movie-image > .movie-date .month {
+    font-size: 12px;
+    font-weight: bold;
+}
+.movie-image > .movie-date .year {
+    font-size: 10px;
+}
+
+.movie-image > .movie-rating {
+    z-index: 100;
+    position: absolute;
+    right: 0px;
+    color: white;
+    bottom: 5px;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.movie-rating .thumbsup-ico {
+    font-size: 20px;
+    color: #49ba8e;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie-rating .vote-count {
+    font-size: 11px;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1100px) {
+    .movie {
+        margin: 15px !important;
+    }
+
+    .movie .movie-name {
+        font-size: 14px;
+        margin: 8px 0px;
+    }
+}
